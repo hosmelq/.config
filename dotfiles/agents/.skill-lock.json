@@ -1,0 +1,130 @@
+{
+  "version": 3,
+  "skills": {
+    "animate": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/emilkowalski/skills.git",
+      "skillPath": "skills/animate/SKILL.md",
+      "skillFolderHash": "adf23358fac7bdce5febcb85d7fd985407ead56f",
+      "installedAt": "2026-09-04T02:33:55.589Z",
+      "updatedAt": "2026-09-04T02:33:55.589Z"
+    },
+    "codex-thread-orchestrator": {
+      "source": "hosmelq/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/hosmelq/skills.git",
+      "skillPath": "skills/codex-thread-orchestrator/SKILL.md",
+      "skillFolderHash": "a0095d4850a30106c14947f58788a137b9f0a181",
+      "installedAt": "2026-07-27T22:11:02.887Z",
+      "updatedAt": "2026-08-20T21:02:04.609Z"
+    },
+    "computer-use": {
+      "source": "stablyai/orca",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/stablyai/orca.git",
+      "skillPath": "skills/computer-use/SKILL.md",
+      "skillFolderHash": "f0561c41d1f709a953684aef5d5368f8c58d269f",
+      "installedAt": "2026-09-01T05:10:00.882Z",
+      "updatedAt": "2026-09-01T05:10:00.882Z"
+    },
+    "convert-documents-to-markdown": {
+      "source": "firecrawl/anydoc",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/firecrawl/anydoc.git",
+      "skillPath": "skills/convert-documents-to-markdown/SKILL.md",
+      "skillFolderHash": "8559245000abebb500dfad53ef82fa383448b719",
+      "installedAt": "2026-08-18T15:55:29.046Z",
+      "updatedAt": "2026-09-05T15:54:48.062Z"
+    },
+    "durable-workflow-control": {
+      "source": "hosmelq/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/hosmelq/skills.git",
+      "skillPath": "skills/durable-workflow-control/SKILL.md",
+      "skillFolderHash": "86f3cb2e8362e6ea4dff53e6c9aa7cf0189e06ad",
+      "installedAt": "2026-07-08T16:16:36.599Z",
+      "updatedAt": "2026-08-10T13:56:59.014Z"
+    },
+    "no-ai-slop": {
+      "source": "petergyang/no-ai-slop",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/petergyang/no-ai-slop.git",
+      "skillPath": "skills/no-ai-slop/SKILL.md",
+      "skillFolderHash": "3d8be37cd59f6601cbc33676ecaf5b42865daf63",
+      "installedAt": "2026-09-03T00:52:17.550Z",
+      "updatedAt": "2026-09-03T00:52:17.550Z"
+    },
+    "orca-cli": {
+      "source": "stablyai/orca",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/stablyai/orca.git",
+      "skillPath": "skills/orca-cli/SKILL.md",
+      "skillFolderHash": "cdf89459f89dddf347ee2759ff884c369051f06a",
+      "installedAt": "2026-09-01T05:06:24.923Z",
+      "updatedAt": "2026-09-01T05:06:24.923Z"
+    },
+    "orca-linear": {
+      "source": "stablyai/orca",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/stablyai/orca.git",
+      "skillPath": "skills/orca-linear/SKILL.md",
+      "skillFolderHash": "2b0b3b3d422f0d9cdb88574e955c345ed4370ea8",
+      "installedAt": "2026-09-05T15:53:08.018Z",
+      "updatedAt": "2026-09-10T17:14:34.225Z"
+    },
+    "orchestration": {
+      "source": "stablyai/orca",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/stablyai/orca.git",
+      "skillPath": "skills/orchestration/SKILL.md",
+      "skillFolderHash": "902cc33dd65730b32ac234dd0ae7166d75498b46",
+      "installedAt": "2026-09-01T05:08:39.554Z",
+      "updatedAt": "2026-09-05T15:54:56.695Z"
+    },
+    "prototype": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/emilkowalski/skills.git",
+      "skillPath": "skills/prototype/SKILL.md",
+      "skillFolderHash": "564cf82ef5b17f5e018b439dc7fd1e392dcf6188",
+      "installedAt": "2026-09-04T02:33:55.593Z",
+      "updatedAt": "2026-09-04T02:33:55.593Z"
+    },
+    "review-animations": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/emilkowalski/skills.git",
+      "skillPath": "skills/review-animations/SKILL.md",
+      "skillFolderHash": "82571acae75a97764fa7899f10bd21d93a4f1414",
+      "installedAt": "2026-09-04T02:33:55.593Z",
+      "updatedAt": "2026-09-04T02:33:55.593Z"
+    },
+    "vocabulary": {
+      "source": "index-how/vocabulary",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/index-how/vocabulary.git",
+      "skillPath": "skills/vocabulary/SKILL.md",
+      "skillFolderHash": "c4b30f520e995bf1399659886ea6df4b9d5eea5b",
+      "installedAt": "2026-09-04T02:00:49.087Z",
+      "updatedAt": "2026-09-04T02:28:30.880Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "claude-code",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "warp",
+    "zed"
+  ]
+}

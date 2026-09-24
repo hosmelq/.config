@@ -1,0 +1,11 @@
+*.local.lock
+*.local.toml
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+dotfiles/fish/conf.d/variables.fish
+dotfiles/fish/fish_history
+dotfiles/fish/fish_variables

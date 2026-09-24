@@ -1,0 +1,15 @@
+{
+  "executor": {
+    "type": "http",
+    "url": "https://executor.hosmelq.com/mcp",
+    "headers": {
+      "Authorization": "Bearer __CODEX_EXECUTOR_TOKEN__"
+    }
+  },
+  "tableplus": {
+    "type": "stdio",
+    "command": "/Applications/Setapp/TablePlus.app/Contents/MacOS/tableplus-mcp",
+    "args": [],
+    "env": {}
+  }
+}

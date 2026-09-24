@@ -1,0 +1,49 @@
+min_version = "2026.9.1"
+
+[env]
+COMPOSER_HOME = "{{ env.HOME }}/.composer"
+
+PHP_EXTRA_CONFIGURE_OPTIONS = "--with-zip"
+
+PORTLESS_TLD = "localhost"
+
+[tools]
+1password-cli = "latest"
+bat = "latest"
+bun = "latest"
+caddy = "latest"
+claude-code = "latest"
+cloudflared = "latest"
+codex = "latest"
+delta = "latest"
+deno = "latest"
+eza = "latest"
+fzf = "latest"
+"gem:cocoapods" = "latest"
+gh = "latest"
+"github:composer/composer" = { asset_pattern = "composer.phar", bin = "composer", version = "latest" }
+"github:gittower/git-flow-next" = "latest"
+"github:php/pie" = { asset_pattern = "pie.phar", bin = "pie", version = "latest" }
+"github:planetscale/cli" = "latest"
+"github:rorkai/App-Store-Connect-CLI" = { bin = "asc", version = "latest" }
+jq = "latest"
+lazygit = "latest"
+mas = "latest"
+mysql-client = "latest"
+node = "latest"
+nub = "latest"
+ollama = "latest"
+php = "latest"
+pnpm = "latest"
+portless = "latest"
+"pypi:httpie" = { uvx_args = "--python python3 --no-managed-python", version = "latest" }
+python = "latest"
+railway = "latest"
+ruby = "latest"
+rust = "latest"
+starship = "latest"
+tlrc = "latest"
+uv = "latest"
+yarn = "latest"
+yt-dlp = "latest"
+zoxide = "latest"
