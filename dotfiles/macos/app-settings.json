@@ -11,6 +11,25 @@
       "textDiffMode": 1
     },
     "com.getcleanshot.app-setapp": {
+      "afterScreenshotActions": [
+        0,
+        1
+      ],
+      "annotateExpandCanvas": true,
+      "annotatePixelateIntensity": 10,
+      "annotateRestoreBackgroundToolOpenState": true,
+      "annotateShowMoreGradients": true,
+      "annotateTextStyle": 0,
+      "autoClosePopup": true,
+      "captureCursor": false,
+      "captureWithoutDesktopIcons": true,
+      "crosshairMode": 1,
+      "deletePopupAfterDragging": true,
+      "doNotDisturbWhileRecording": true,
+      "freezeScreen": true,
+      "highlightClicks": true,
+      "inverseArrowDirection": false,
+      "keyboardOverlayDisplayAll": true,
       "LAVAtakeAllInOne": {
         "$jsonData": {
           "carbonKey": 23,
@@ -35,25 +54,6 @@
           "carbonModifiers": 768
         }
       },
-      "afterScreenshotActions": [
-        0,
-        1
-      ],
-      "annotateExpandCanvas": true,
-      "annotatePixelateIntensity": 10,
-      "annotateRestoreBackgroundToolOpenState": true,
-      "annotateShowMoreGradients": true,
-      "annotateTextStyle": 0,
-      "autoClosePopup": true,
-      "captureCursor": false,
-      "captureWithoutDesktopIcons": true,
-      "crosshairMode": 1,
-      "deletePopupAfterDragging": true,
-      "doNotDisturbWhileRecording": true,
-      "freezeScreen": true,
-      "highlightClicks": true,
-      "inverseArrowDirection": false,
-      "keyboardOverlayDisplayAll": true,
       "playSounds": false,
       "popupAskForDestinationWhenSaving": false,
       "popupAutoCloseInterval": 30,
@@ -92,6 +92,7 @@
       "monacoEditorTabSize": 2
     },
     "com.tinyapp.TablePlus-setapp": {
+      "ThemeKitTheme": "com.luckymarmot.ThemeKit.DarkTheme",
       "TPShortcutRunAllQueries": {
         "keyCode": 36,
         "modifierFlags": 1179648
@@ -139,8 +140,7 @@
       "TPShortcutToggleLineComment": {
         "keyCode": 44,
         "modifierFlags": 1048576
-      },
-      "ThemeKitTheme": "com.luckymarmot.ThemeKit.DarkTheme"
+      }
     },
     "com.wiheads.paste-setapp": {
       "activationShortcut": {
@@ -231,17 +231,17 @@
       "regex-tester-settings-auto-flags": ""
     },
     "pl.maketheweb.pixelsnap2-setapp": {
+      "adobeXDIntegration": false,
+      "appearance": 2,
+      "clipboardFormat": 0,
+      "displayUnits": true,
+      "enableRatioInDistanceTool": true,
       "LAVAglobalHotkey": {
         "$jsonData": {
           "carbonKey": 2,
           "carbonModifiers": 768
         }
       },
-      "adobeXDIntegration": false,
-      "appearance": 2,
-      "clipboardFormat": 0,
-      "displayUnits": true,
-      "enableRatioInDistanceTool": true,
       "pixelInterpretation": 2,
       "screenshotsPadding": 10,
       "showCursor": true,

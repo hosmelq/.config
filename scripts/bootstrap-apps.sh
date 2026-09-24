@@ -2,6 +2,7 @@
 set -eu
 
 python ./scripts/install-agent-config.py
+./scripts/install-claude-plugins.sh
 python3 ./scripts/install-fish-variables.py
 ./scripts/install-npm-tools.sh
 ./scripts/install-portless-service.sh

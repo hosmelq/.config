@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Install Codex and Claude settings, keeping local hooks and secrets local."""
+"""Install Codex and Claude settings, keeping credentials local."""
 
 import getpass
 import json
 import os
 from pathlib import Path
-import re
 import sys
 import tempfile
 import tomllib
@@ -33,34 +32,6 @@ def write_private(path: Path, content: str, before: os.stat_result | None) -> No
             os.unlink(temporary)
 
 
-def local_codex_sections(content: str) -> str:
-    local_headers = (
-        "[hooks",
-        "[marketplaces.",
-        "[mcp_servers.computer-use",
-        "[mcp_servers.node_repl",
-        "[notice",
-        "[projects.",
-        '[permissions.development-safe.filesystem."~/Code/',
-        "[shell_environment_policy.set]",
-        "[tui.model_availability_nux]",
-    )
-    lines = content.splitlines(keepends=True)
-    sections = []
-    start = None
-    for index, line in enumerate(lines):
-        if line.startswith("["):
-            if start is not None:
-                sections.append("".join(lines[start:index]))
-                start = None
-            header = line.split("]", 1)[0] + "]"
-            if header.startswith(local_headers):
-                start = index
-    if start is not None:
-        sections.append("".join(lines[start:]))
-    return "\n".join(section.rstrip("\n") for section in sections)
-
-
 def install_codex() -> str:
     target = HOME / ".codex/config.toml"
     if target.is_symlink():
@@ -82,15 +53,6 @@ def install_codex() -> str:
         raise RuntimeError("Codex template must contain exactly one token marker")
     desired = template.replace(TOKEN_MARKER, "Authorization = " + json.dumps("Bearer " + token))
 
-    root = current_text.split("\n[", 1)[0]
-    notify = re.search(r"(?m)^notify\s*=.*$", root)
-    if notify:
-        first_section = desired.find("\n[")
-        desired = desired[:first_section] + "\n" + notify.group(0) + desired[first_section:]
-    local_sections = local_codex_sections(current_text)
-    if local_sections:
-        desired = desired.rstrip("\n") + "\n\n" + local_sections + "\n"
-
     if current and tomllib.loads(desired) == current:
         if target.stat().st_mode & 0o077:
             os.chmod(target, 0o600)
@@ -108,14 +70,6 @@ def install_claude() -> None:
     before = target.stat() if target.exists() else None
     current = json.loads(target.read_text()) if before else {}
     desired = json.loads((ROOT / "dotfiles/agents/claude-settings.json").read_text())
-    for key in ("hooks", "statusLine"):
-        if key in current:
-            desired[key] = current[key]
-    if current.get("enabledPlugins"):
-        desired["enabledPlugins"] = current["enabledPlugins"]
-    local_auto_mode = current.get("autoMode", {})
-    if isinstance(local_auto_mode, dict) and "environment" in local_auto_mode:
-        desired.setdefault("autoMode", {})["environment"] = local_auto_mode["environment"]
     if desired == current:
         if target.stat().st_mode & 0o077:
             os.chmod(target, 0o600)
