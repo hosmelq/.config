@@ -1,13 +1,15 @@
 approval_policy = "never"
-model = "gpt-6-astra"
-model_reasoning_effort = "xhigh"
+approvals_reviewer = "user"
+model = "gpt-6-sol"
+model_reasoning_effort = "high"
 model_reasoning_summary = "concise"
 model_verbosity = "low"
 personality = "pragmatic"
+sandbox_mode = "danger-full-access"
 tool_output_token_limit = 25000
 web_search = "live"
-sandbox_mode = "danger-full-access"
 
+notify = ["/Users/hosmel/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
 [apps.asdk_app_69373a13116c819189d046aea1278836]
 enabled = false
 
@@ -157,6 +159,10 @@ url = "https://executor.hosmelq.com/mcp"
 [mcp_servers.executor.http_headers]
 Authorization = "Bearer __CODEX_EXECUTOR_TOKEN__"
 
+[mcp_servers.paper]
+args = ["-c", "exec \"$HOME/.paper/bin/paper\" mcp"]
+command = "/bin/sh"
+
 [mcp_servers.tableplus]
 command = "/Applications/Setapp/TablePlus.app/Contents/MacOS/tableplus-mcp"
 
@@ -284,3 +290,252 @@ enabled = true
 [tui]
 status_line = ["model-with-reasoning", "current-dir", "git-branch", "context-remaining", "thread-id"]
 status_line_use_colors = true
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = "/Users/hosmel/.codex/.tmp/bundled-marketplaces/openai-bundled"
+[marketplaces.openai-primary-runtime]
+source = "/Users/hosmel/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+source_type = "local"
+[mcp_servers.computer-use]
+args = ["mcp"]
+command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient"
+cwd = "."
+enabled = false
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node_repl"
+startup_timeout_sec = 120
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+NODE_REPL_NODE_PATH = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/hosmel/.codex:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+CODEX_HOME = "/Users/hosmel/.codex"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+BROWSER_USE_TINYSKY_ENABLED = "1"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = ""
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.917.62051"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/hosmel/.codex/plugins/cache/openai-bundled/browser/26.917.62051/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+SKY_CUA_SERVICE_PATH = "/Users/hosmel/.codex/computer-use/Codex Computer Use.app"
+CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex"
+[notice]
+hide_rate_limit_model_nudge = true
+[notice.external_config_migration_prompts]
+home = true
+home_last_prompted_at = 1780332751
+[permissions.development-safe.filesystem."~/Code/erank-containers"]
+".codex/environments" = "deny"
+"web-app/.codex/environments" = "write"
+[projects."/private/tmp/claude-501/-Users-hosmel-Code-nerdify/5a63cfaf-7f01-41c5-b972-c7724c868af2/scratchpad"]
+trust_level = "trusted"
+[projects."/private/var/folders/v4/bgcm2m2j1n3_0k_5xwh557b40000gn/T"]
+trust_level = "trusted"
+[projects."/Users/hosmel"]
+trust_level = "trusted"
+[projects."/Users/hosmel/.agents"]
+trust_level = "trusted"
+[projects."/Users/hosmel/.codex"]
+trust_level = "trusted"
+[projects."/Users/hosmel/.config"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/agendly-app"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/anydoc-php"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/erank-admin"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/erank-containers"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/erank-containers-release"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/erank-deployment"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/erank-shopbuzz"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/falai-php"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/hosmelq-dot-config"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/hosmelq-dot-github"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/hosmelq-skills"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/hosmelq.com"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/hosmelq.com-new"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/laravel-auditlogs"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/laravel-mail-preview"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/laravel-package-template"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/laravel-package-template-new"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/laravel-template"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/mail-ai"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/mcp"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/nerdify"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/oikiva-mobile"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/package-template"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/paqhub"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/php-anydoc"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/pickuphub.net"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/skills"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/slides-2"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-07-04/files-mentioned-by-the-user-prompt-2"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-07-11/revisa-http-localhost-8471-explorations-html"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-07-20/ahora-que-sali-la-nueva-versi"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-05/hola-tengo-que-dar-un-diplomado"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-05/nece"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-13/ho"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-14/hay"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-18/isn"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-18/ist"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-19/revi"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-19/usa-computer-plugin-computer-use-openai"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-20/hay"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-20/revisa-porque-hermes-desktop-esta-en"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-21/brand-kit-quiero-redise-ar-nerdify"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-21/brand-kit-users-hosmel-agents-skills"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-21/give-me-a-fun-recap-of"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-21/los-requisitos-ya-que-no-estamos"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-21/tengo-que"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-21/tiene-acceso-a-la-configuraci-n"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-27/let-s-set-up-a-scheduled"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-27/let-s-set-up-a-scheduled-2"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-27/voy"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-31/brew-bundle-install-file-code-hosmelq"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-31/cu"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-31/nec"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-08-31/users-hosmel-library-application-support-claude"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-05/usa-chrome-para-entrar-a-upwork"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-05/usa-chrome-plugin-chrome-openai-bundled"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-06/rev"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-08/revisa-https-x-com-jamonholmgren-status-3"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-09/ent"]
+trust_level = "trusted"
+[projects."/Users/hosmel/orca/workspaces/erank-shopbuzz/andrew-admin-changes-2"]
+trust_level = "trusted"
+[projects."/Users/hosmel/orca/workspaces/erank-shopbuzz/seasnake"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-09/usa-chrome-plugin-chrome-openai-bundled"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-10/https-lasalle-edu-ni-admisiones"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-10/asd"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-11/tene"]
+trust_level = "trusted"
+[shell_environment_policy.set]
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "7fe0e1c59da4bc68f9d6ab81ae8d349b53fee44b074f49be0effbc1105a5f1d3"
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+"gpt-5.6-sol" = 4
+gpt-6-astra = 4
+[projects."/Users/hosmel/Code/laravel-anydoc"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Code/boost"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-11/erank-containers-on-gitbutler-workspace-took"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-11/abre-claude-desktop-con-computer-plugin"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-12/investiga-los-skills-que-m-s"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-12/revisa-si-esto-tiene-brew-https"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-12/com"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-13/revisa-porque-hay-tantos-proyectos-en"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-14/revisa-todas-las-carpetas-en-users"]
+trust_level = "trusted"
+[projects."/Users/hosmel/orca/workspaces/erank-admin/unicornfish"]
+trust_level = "trusted"
+[projects."/Users/hosmel/orca/workspaces/erank-shopbuzz/pyrosome"]
+trust_level = "trusted"
+[projects."/Users/hosmel/orca/workspaces/erank-containers/encantado"]
+trust_level = "trusted"
+[projects."/Users/hosmel/orca/workspaces/paqhub/shag"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-15/revisa-que-paso"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-15/me-mandaron-esto-haz-un-research"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-16/usa-chrome-plugin-chrome-openai-bundled"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-17/ten"]
+trust_level = "trusted"
+[projects."/Users/hosmel/orca/workspaces/paqhub/cowfish"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-17/necesito-convertir-una-cuenta-de-apple"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-18/usa-computer-plugin-computer-use-openai"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-18/new-realtime-voice-chat"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-20/puedo-usar-mise-para-configurar-cosas"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-21/don"]
+trust_level = "trusted"
+[projects."/Users/hosmel/Documents/Codex/2026-09-22/revisa-mis-paquetes-principales-en-github"]
+trust_level = "trusted"
+[hooks.state."/Users/hosmel/.codex/hooks.json:post_compact:0:0"]
+enabled = true
+trusted_hash = "sha256:52d27203f6039e09d29dee883982b10bc842aa406d1b6942ed4770b1bf93258f"
+[hooks.state."/Users/hosmel/.codex/hooks.json:session_start:0:0"]
+enabled = true
+trusted_hash = "sha256:4bf4dd233491d0e80a05359528e8d1cce809f2b144523470cdd97a31595daee2"
+[hooks.state."/Users/hosmel/.codex/hooks.json:subagent_start:0:0"]
+enabled = true
+trusted_hash = "sha256:6bd65808ae64bedc870de48458c5de2486d8ea4b0c404792ff6ca0fe2b0fb208"
+[hooks.state."browser@openai-bundled:plugin.json#hooks[0]:stop:0:0"]
+trusted_hash = "sha256:317a07045dfc95aef2e80c55428a2f817e2768be867e3b1ef29a73da8636ae7f"
+[hooks.state."chrome@openai-bundled:plugin.json#hooks[0]:stop:0:0"]
+trusted_hash = "sha256:317a07045dfc95aef2e80c55428a2f817e2768be867e3b1ef29a73da8636ae7f"

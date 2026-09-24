@@ -68,11 +68,11 @@ min_version = "2026.9.11"
 "brew:webp" = { os = "macos", version = "latest" }
 "brew:zlib" = { os = "macos", version = "latest" }
 "mas:1355679052" = { os = "macos", version = "latest" } # Dropover
-"mas:441258766" = { os = "macos", version = "latest" } # Magnet
 "mas:361304891" = { os = "macos", version = "latest" } # Numbers
 "mas:361309726" = { os = "macos", version = "latest" } # Pages
-"mas:803453959" = { os = "macos", version = "latest" } # Slack
+"mas:441258766" = { os = "macos", version = "latest" } # Magnet
 "mas:497799835" = { os = "macos", version = "latest" } # Xcode
+"mas:803453959" = { os = "macos", version = "latest" } # Slack
 
 [bootstrap.macos.dock]
 autohide = true

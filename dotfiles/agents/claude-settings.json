@@ -4,6 +4,9 @@
     "pr": "",
     "sessionUrl": false
   },
+  "enabledPlugins": {
+    "paper-desktop@paper": true
+  },
   "extraKnownMarketplaces": {
     "paper": {
       "source": {
@@ -11,32 +14,5 @@
         "url": "https://github.com/paper-design/agent-plugins.git"
       }
     }
-  },
-  "outputStyle": "Concise",
-  "effortLevel": "high",
-  "modelSettings": {
-    "claude-opus-5": {
-      "effortLevel": "high"
-    },
-    "claude-opus-5-5": {
-      "effortLevel": "high"
-    }
-  },
-  "tui": "fullscreen",
-  "skipWorkflowUsageWarning": true,
-  "theme": "light",
-  "agentPushNotifEnabled": true,
-  "autoMode": {
-    "allow": [
-      "$defaults",
-      "Bash(railway status:*)",
-      "Bash(railway logs:*)",
-      "Bash(composer install:*)"
-    ],
-    "soft_deny": [
-      "$defaults",
-      "Bash(railway down:*)",
-      "Bash(railway service delete:*)"
-    ]
   }
 }
