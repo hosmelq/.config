@@ -23,7 +23,6 @@ min_version = "2026.9.11"
 "brew-cask:paper-design" = { os = "macos", version = "latest" }
 "brew-cask:phpstorm" = { os = "macos", version = "latest" }
 "brew-cask:setapp" = { adopt = true, os = "macos", version = "latest" }
-"brew-cask:stablyai/orca/orca" = { os = "macos", version = "latest" }
 "brew-cask:tailscale-app" = { os = "macos", version = "latest" }
 "brew-cask:telegram" = { os = "macos", version = "latest" }
 "brew-cask:termius" = { os = "macos", version = "latest" }

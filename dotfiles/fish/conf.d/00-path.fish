@@ -4,7 +4,7 @@ end
 
 # PHP builds require a newer Bison than the version shipped with macOS.
 if test -d /opt/homebrew/opt/bison/bin
-    fish_add_path --global --path /opt/homebrew/opt/bison/bin
+    fish_add_path --move --global --path /opt/homebrew/opt/bison/bin
 end
 
 if test -d /opt/homebrew/opt/libpq/bin

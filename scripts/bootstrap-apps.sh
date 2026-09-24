@@ -1,6 +1,9 @@
 #!/bin/sh
 set -eu
 
+# This tap needs Ruby 3+, which mise installs after the main packages phase.
+mise bootstrap packages apply brew-cask:stablyai/orca/orca --yes
+
 python ./scripts/install-agent-config.py
 ./scripts/install-claude-plugins.sh
 python3 ./scripts/install-fish-variables.py

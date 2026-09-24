@@ -7,6 +7,10 @@ and an App Store account signed in:
 mise bootstrap --force-dotfiles
 ```
 
+Run it in an interactive terminal: some app installers, App Store packages,
+and Portless require a `sudo` password. Quit apps whose preferences are being
+replaced before rerunning the bootstrap task.
+
 `mise.toml` installs applications and system packages, links portable config,
 and runs the bootstrap task. `mise/config.toml` selects global tools at `latest`;
 projects can override versions in their own mise files.
