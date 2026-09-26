@@ -1,0 +1,252 @@
+{
+  "domains": {
+    "com.bytieful.Gitfox-setapp": {
+      "automaticFetchInterval": 3600,
+      "destructiveDiscard": false,
+      "fetchAllRemotes": true,
+      "fetchAllTags": true,
+      "fullPaneTextDiffMode": 2,
+      "preferredEditorApplication": "/Applications/PhpStorm.app",
+      "preferredTerminalApplication": "/Applications/iTerm.app",
+      "textDiffMode": 1
+    },
+    "com.getcleanshot.app-setapp": {
+      "afterScreenshotActions": [
+        0,
+        1
+      ],
+      "annotateExpandCanvas": true,
+      "annotatePixelateIntensity": 10,
+      "annotateRestoreBackgroundToolOpenState": true,
+      "annotateShowMoreGradients": true,
+      "annotateTextStyle": 0,
+      "autoClosePopup": true,
+      "captureCursor": false,
+      "captureWithoutDesktopIcons": true,
+      "crosshairMode": 1,
+      "deletePopupAfterDragging": true,
+      "doNotDisturbWhileRecording": true,
+      "freezeScreen": true,
+      "highlightClicks": true,
+      "inverseArrowDirection": false,
+      "keyboardOverlayDisplayAll": true,
+      "LAVAtakeAllInOne": {
+        "$jsonData": {
+          "carbonKey": 23,
+          "carbonModifiers": 768
+        }
+      },
+      "LAVAtakeArea": {
+        "$jsonData": {
+          "carbonKey": 21,
+          "carbonModifiers": 768
+        }
+      },
+      "LAVAtakeFullscreen": {
+        "$jsonData": {
+          "carbonKey": 20,
+          "carbonModifiers": 768
+        }
+      },
+      "LAVAtakeOCR": {
+        "$jsonData": {
+          "carbonKey": 19,
+          "carbonModifiers": 768
+        }
+      },
+      "playSounds": false,
+      "popupAskForDestinationWhenSaving": false,
+      "popupAutoCloseInterval": 30,
+      "popupAutoCloseMode": 1,
+      "popupOnLeftEdge": true,
+      "popupSize": 1,
+      "rememberRecordingArea": true
+    },
+    "com.hieudinh.Compresto-setapp": {
+      "confettiEnabled": true,
+      "imageTargetFileSizeUnit": "KB",
+      "menuBarIconStyle": "simple",
+      "notchStyle": "expanded",
+      "showDockIcon": false,
+      "showMenuBarIcon": true,
+      "sleepWhenFinish": false
+    },
+    "com.macpaw.CleanMyMac-setapp": {
+      "MenuAppEnabled": false,
+      "ShowAssistantRecommendations": false
+    },
+    "com.nikolaeu.numi-setapp": {
+      "alwaysOnTop": true,
+      "correctFinish": true,
+      "menuBarMode": false,
+      "nightTheme": true
+    },
+    "com.proxyman.NSProxy-setapp": {
+      "accessControlModeString": "allowAll",
+      "com.proxyman.showSummaryTab": true,
+      "contentFontSize": 16,
+      "currentThemeSelectionIndex": 2,
+      "isDoNotDisplayQuitAlert": true,
+      "isMCPRedactionPreviewEnabled": false,
+      "isMCPServerEnabled": true,
+      "monacoEditorTabSize": 2
+    },
+    "com.tinyapp.TablePlus-setapp": {
+      "ThemeKitTheme": "com.luckymarmot.ThemeKit.DarkTheme",
+      "TPShortcutRunAllQueries": {
+        "keyCode": 36,
+        "modifierFlags": 1179648
+      },
+      "TPShortcutRunCurrentQuery": {
+        "keyCode": 36,
+        "modifierFlags": 1048576
+      },
+      "TPShortcutSelectNextPane": {
+        "keyCode": 30,
+        "modifierFlags": 1572864
+      },
+      "TPShortcutSelectNextTab": {
+        "keyCode": 30,
+        "modifierFlags": 1048576
+      },
+      "TPShortcutSelectNextWorkspace": {
+        "keyCode": 30,
+        "modifierFlags": 1179648
+      },
+      "TPShortcutSelectPreviousPane": {
+        "keyCode": 33,
+        "modifierFlags": 1572864
+      },
+      "TPShortcutSelectPreviousTab": {
+        "keyCode": 33,
+        "modifierFlags": 1048576
+      },
+      "TPShortcutSelectPreviousWorkspace": {
+        "keyCode": 33,
+        "modifierFlags": 1179648
+      },
+      "TPShortcutShowTableData": {
+        "keyCode": 33,
+        "modifierFlags": 1310720
+      },
+      "TPShortcutShowTableStructure": {
+        "keyCode": 30,
+        "modifierFlags": 1310720
+      },
+      "TPShortcutToggleBlockComment": {
+        "keyCode": 44,
+        "modifierFlags": 1572864
+      },
+      "TPShortcutToggleLineComment": {
+        "keyCode": 44,
+        "modifierFlags": 1048576
+      }
+    },
+    "com.wiheads.paste-setapp": {
+      "activationShortcut": {
+        "$jsonData": {
+          "internalModifiers": 1179648,
+          "keyCode": 9
+        }
+      },
+      "isMCPEnabled": true,
+      "isSoundEffectsEnabled": false,
+      "isSyncEnabled": true,
+      "mcpPort": 39725,
+      "nextPinboardShortcut": {
+        "$jsonData": {
+          "internalModifiers": 1048576,
+          "keyCode": 124
+        }
+      },
+      "pasteStackDirection": "bottom",
+      "pasteStackShortcut": {
+        "$jsonData": {
+          "internalModifiers": 1310720,
+          "keyCode": 8
+        }
+      },
+      "plainTextModifierFlags": 131072,
+      "previousPinboardShortcut": {
+        "$jsonData": {
+          "internalModifiers": 1048576,
+          "keyCode": 123
+        }
+      },
+      "quickPasteModifierFlags": 1048576
+    },
+    "me.tdinh.devutils-setapp": {
+      "app-settings-text-view-show-line-numbers": true,
+      "app-settings-text-view-wrap-lines": true,
+      "app-settings-theme": "System",
+      "auto-clipboard-global-hotkey": true,
+      "auto-clipboard-status-bar-activate-icon": true,
+      "auto-clipboard-status-bar-copy-output": true,
+      "auto-use-clipboard-content-when-activate": true,
+      "base64-auto-detect-decode": true,
+      "base64-auto-remove-data-notation": true,
+      "base64-auto-remove-null-byte": true,
+      "csv-to-json-delimiter": ",",
+      "csv-to-json-first-row-header": true,
+      "csv-to-json-swap-column": false,
+      "html-entity-options-allow-unsafe-symbols": false,
+      "html-entity-options-auto-detect-decodable": true,
+      "html-entity-options-encode-everything": false,
+      "html-entity-options-strict-decoding": false,
+      "html-entity-options-use-decimal-format": false,
+      "html-entity-options-use-named-references": true,
+      "json-formatter-allow-trailing-commas-comments": false,
+      "json-formatter-auto-activate-valid-json": true,
+      "json-formatter-auto-parse-line-delimited-json": true,
+      "json-formatter-auto-repair": true,
+      "json-formatter-evaluate-json-path-continuously": true,
+      "json-formatter-input-type-2": "JSON",
+      "json-formatter-preserve-numbers-and-encoding": false,
+      "json-formatter-sort-keys": false,
+      "json-to-csv-delimiter": ",",
+      "json-to-csv-escaped-quote": "\"\"",
+      "json-to-csv-excel-style-data": false,
+      "json-to-csv-flatten-objects": true,
+      "json-to-csv-include-bom": false,
+      "json-to-csv-include-empty-rows": false,
+      "json-to-csv-include-headers": true,
+      "json-to-csv-quote": "\"",
+      "jwt-auto-detect-well-formed": true,
+      "preferences-ask-confirm-quitting": false,
+      "preferences-enable-fuzzy-matching": false,
+      "query-string-parser-auto-detect-variables": true,
+      "random-string-batch-size": "x1",
+      "random-string-chars": 5,
+      "random-string-custom-char-size": 0,
+      "random-string-custom-charset": "áâăđêếể",
+      "random-string-digits": 5,
+      "random-string-generator-colors": true,
+      "random-string-group-size": 0,
+      "random-string-lowercased-chars": 5,
+      "random-string-seed": "0",
+      "random-string-separator": "(None)",
+      "random-string-symbols": 5,
+      "random-string-words": 0,
+      "regex-tester-settings-auto-detect": true,
+      "regex-tester-settings-auto-flags": ""
+    },
+    "pl.maketheweb.pixelsnap2-setapp": {
+      "adobeXDIntegration": false,
+      "appearance": 2,
+      "clipboardFormat": 0,
+      "displayUnits": true,
+      "enableRatioInDistanceTool": true,
+      "LAVAglobalHotkey": {
+        "$jsonData": {
+          "carbonKey": 2,
+          "carbonModifiers": 768
+        }
+      },
+      "pixelInterpretation": 2,
+      "screenshotsPadding": 10,
+      "showCursor": true,
+      "showMenubarIcon": true,
+      "usedInactiveMode": true
+    }
+  }
+}

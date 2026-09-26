@@ -1,0 +1,18 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
+  "enabledPlugins": {
+    "paper-desktop@paper": true
+  },
+  "extraKnownMarketplaces": {
+    "paper": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/paper-design/agent-plugins.git"
+      }
+    }
+  }
+}

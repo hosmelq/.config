@@ -1,0 +1,14 @@
+[bootstrap.packages]
+"brew-cask:affinity" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:buttercup" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:codexbar" = { os = "macos", version = "latest" }
+"brew-cask:discord" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:figma" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:logi-options+" = { os = "macos", version = "latest" }
+"brew-cask:phpstorm" = { os = "macos", version = "latest" }
+"brew-cask:telegram" = { os = "macos", version = "latest" }
+"brew-cask:yaak" = { adopt = true, os = "macos", version = "latest" }
+"mas:1663047912" = { os = "macos", version = "latest" } # Screens 5
+"mas:361304891" = { os = "macos", version = "latest" } # Numbers
+"mas:361309726" = { os = "macos", version = "latest" } # Pages
+"mas:803453959" = { os = "macos", version = "latest" } # Slack
