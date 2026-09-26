@@ -1,0 +1,27 @@
+[commit]
+    gpgsign = true
+[core]
+    ignorecase = false
+    pager = delta
+[credential "https://gist.github.com"]
+    helper =
+    helper = !/opt/homebrew/bin/mise exec -- gh auth git-credential
+[credential "https://github.com"]
+    helper =
+    helper = !/opt/homebrew/bin/mise exec -- gh auth git-credential
+[delta]
+    navigate = true
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[interactive]
+    diffFilter = delta --color-only
+[merge]
+    conflictStyle = zdiff3
+[mergetool]
+    keepBackup = true
+[user]
+    email = hosmelq@gmail.com
+    name = Hosmel Quintana
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMSjjcIK+WLnPgWneTWl29lbBOQj2C3Vi0b6/ooMWHAg

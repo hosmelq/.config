@@ -1,0 +1,166 @@
+min_version = "2026.9.11"
+
+[bootstrap.packages]
+# Direct tools and PHP build inputs; Homebrew resolves transitive dependencies.
+"brew-cask:1password" = { os = "macos", version = "latest" }
+"brew-cask:affinity" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:android-studio" = { os = "macos", version = "latest" }
+"brew-cask:chatgpt" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:claude" = { os = "macos", version = "latest" }
+"brew-cask:cleanmymac-cli" = { os = "macos", version = "latest" }
+"brew-cask:coderabbit" = { os = "macos", version = "latest" }
+"brew-cask:codex" = { os = "macos", version = "latest" }
+"brew-cask:codexbar" = { os = "macos", version = "latest" }
+"brew-cask:discord" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:figma" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:gitbutler" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:google-chrome" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:hammerspoon" = { os = "macos", version = "latest" }
+"brew-cask:iterm2" = { os = "macos", version = "latest" }
+"brew-cask:linear" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:logi-options+" = { os = "macos", version = "latest" }
+"brew-cask:orbstack" = { os = "macos", version = "latest" }
+"brew-cask:paper-design" = { os = "macos", version = "latest" }
+"brew-cask:phpstorm" = { os = "macos", version = "latest" }
+"brew-cask:setapp" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:tailscale-app" = { os = "macos", version = "latest" }
+"brew-cask:telegram" = { os = "macos", version = "latest" }
+"brew-cask:termius" = { os = "macos", version = "latest" }
+"brew-cask:tldraw" = { os = "macos", version = "latest" }
+"brew-cask:tuna" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:visual-studio-code" = { os = "macos", version = "latest" }
+"brew-cask:yaak" = { adopt = true, os = "macos", version = "latest" }
+"brew-cask:zoom" = { os = "macos", version = "latest" }
+"brew:autoconf" = { os = "macos", version = "latest" }
+"brew:bison" = { os = "macos", version = "latest" }
+"brew:bzip2" = { os = "macos", version = "latest" }
+"brew:curl" = { os = "macos", version = "latest" }
+"brew:ffmpeg" = { os = "macos", version = "latest" }
+"brew:fish" = { os = "macos", version = "latest" }
+"brew:freetype" = { os = "macos", version = "latest" }
+"brew:gettext" = { os = "macos", version = "latest" }
+"brew:ghostscript" = { os = "macos", version = "latest" }
+"brew:git" = { os = "macos", version = "latest" }
+"brew:gmp" = { os = "macos", version = "latest" }
+"brew:htop" = { os = "macos", version = "latest" }
+"brew:icu4c@78" = { os = "macos", version = "latest" }
+"brew:jpeg-turbo" = { os = "macos", version = "latest" }
+"brew:krb5" = { os = "macos", version = "latest" }
+"brew:libiconv" = { os = "macos", version = "latest" }
+"brew:libpng" = { os = "macos", version = "latest" }
+"brew:libpq" = { os = "macos", version = "latest" }
+"brew:libsodium" = { os = "macos", version = "latest" }
+"brew:libxml2" = { os = "macos", version = "latest" }
+"brew:libzip" = { os = "macos", version = "latest" }
+"brew:mise" = { os = "macos", version = "latest" }
+"brew:mole" = { os = "macos", version = "latest" }
+"brew:oniguruma" = { os = "macos", version = "latest" }
+"brew:openssl@3" = { os = "macos", version = "latest" }
+"brew:pkgconf" = { os = "macos", version = "latest" }
+"brew:re2c" = { os = "macos", version = "latest" }
+"brew:readline" = { os = "macos", version = "latest" }
+"brew:sqlite" = { os = "macos", version = "latest" }
+"brew:tailscale" = { os = "macos", version = "latest" }
+"brew:timg" = { os = "macos", version = "latest" }
+"brew:watch" = { os = "macos", version = "latest" }
+"brew:watchman" = { os = "macos", version = "latest" }
+"brew:webp" = { os = "macos", version = "latest" }
+"brew:zlib" = { os = "macos", version = "latest" }
+"mas:1355679052" = { os = "macos", version = "latest" } # Dropover
+"mas:361304891" = { os = "macos", version = "latest" } # Numbers
+"mas:361309726" = { os = "macos", version = "latest" } # Pages
+"mas:441258766" = { os = "macos", version = "latest" } # Magnet
+"mas:497799835" = { os = "macos", version = "latest" } # Xcode
+"mas:803453959" = { os = "macos", version = "latest" } # Slack
+
+[bootstrap.macos.dock]
+autohide = true
+autohide_delay = 8640000.0
+mru_spaces = false
+orientation = "left"
+
+[bootstrap.macos.finder]
+preferred_view_style = "column"
+
+[bootstrap.macos.keyboard]
+fn_state = true
+press_and_hold = false
+
+[bootstrap.macos.trackpad]
+tap_to_click = true
+three_finger_drag = true
+
+[bootstrap.macos.defaults.NSGlobalDomain]
+AppleInterfaceStyle = "Dark"
+AppleInterfaceStyleSwitchesAutomatically = true
+AppleMenuBarVisibleInFullscreen = true
+AppleMiniaturizeOnDoubleClick = false
+AppleShowAllExtensions = true
+AppleSpacesSwitchOnActivate = false
+NSAllowContinuousSpellChecking = false
+"com.apple.trackpad.forceClick" = false
+
+[bootstrap.macos.defaults."com.apple.dock"]
+"minimize-to-application" = true
+tilesize = 60.0
+
+[bootstrap.macos.defaults."com.sindresorhus.Supercharge-setapp"]
+accidentalCloseWindowPreventionFilter = '{"apps":[],"isExclusion":false}'
+accidentalCloseWindowPreventionMode = "disabled"
+accidentalQuitPreventionMode = "doubleTap"
+accidentalWindowClosingFilter = '{"apps":[],"isExclusion":false}'
+automaticClipboardClear = true
+brightnessAdjustmentStep = "half"
+capsLockNoDelay = true
+centerMousePointerTweak = true
+defaultBrowserPickerUseSubmenu = false
+disableAppSwitcher = true
+finderCutFiles = true
+finderCutFiles_soundEffects = true
+finderOpenWithReturnKey = true
+greenTrafficLightButtonFillIsEnabled = true
+hideCursorIdleTimeout = "[0,5000000000000000000]"
+isDMGAppInstallerEnabled = true
+keepAwake_includeScreen = true
+lowercaseFileExtensionsInDownloadsDirectory = true
+menuBarIcon = "bolt"
+menuSectionOrder = ["actions", "apps", "defaultBrowser", "shortcuts", "systemSettings", "toggles"]
+preventMusicLaunch = true
+preventMusicLaunch_onlyMediaKey = true
+soundMenuBarIconVisibility = "always"
+shownInMenu = ["captureAndTranslate", "scanQRCode", "scanQRCodeFromPasteboard", "clearAllNotifications", "startCleaningMode", "startCatMode", "darkMode", "toggleNightShift", "toggleTrueTone", "toggleMuteSound", "toggleMuteMicrophone", "toggleIOSNotifications", "toggleAutoQuitApps"]
+unminimizeWindowsOnAppActivationMode = "disabled"
+volumeAdjustmentStep = "normal"
+
+[bootstrap.macos.defaults."org.hammerspoon.Hammerspoon"]
+MJShowMenuIconKey = false
+
+[[bootstrap.macos.defaults_entries]]
+domain = "NSGlobalDomain"
+host = "current"
+key = "com.apple.keyboard.modifiermapping.0-0-0"
+value = [
+  { HIDKeyboardModifierMappingDst = 30064771072, HIDKeyboardModifierMappingSrc = 30064771300 },
+  { HIDKeyboardModifierMappingDst = 30064771072, HIDKeyboardModifierMappingSrc = 30064771296 },
+  { HIDKeyboardModifierMappingDst = 30064771300, HIDKeyboardModifierMappingSrc = 30064771129 },
+]
+
+[dotfiles]
+"~/.agents/.skill-lock.json" = { mode = "symlink", source = "dotfiles/agents/.skill-lock.json" }
+"~/.codex/AGENTS.md" = { mode = "copy", source = "dotfiles/agents/AGENTS.md" }
+"~/.codex/keybindings.json" = { mode = "symlink", source = "dotfiles/agents/codex-keybindings.json" }
+"~/.claude/CLAUDE.md" = { mode = "symlink", source = "~/.codex/AGENTS.md" }
+"~/.composer/composer.json" = { mode = "symlink", source = "dotfiles/composer/composer.json" }
+"~/.config/fish" = { mode = "symlink-each", source = "dotfiles/fish" }
+"~/.config/git/config" = { mode = "symlink", source = "dotfiles/git/config" }
+"~/.config/git/ignore" = { mode = "symlink", source = "dotfiles/git/ignore" }
+"~/.config/mise/config.toml" = { mode = "symlink", source = "mise/config.toml" }
+"~/.hammerspoon/init.lua" = { mode = "symlink", source = "dotfiles/hammerspoon/init.lua" }
+
+[tools]
+# Required for third-party taps before the global tool config is linked.
+ruby = "latest"
+
+[tasks.bootstrap]
+description = "Install portable application packages"
+run = "./scripts/bootstrap-apps.sh"
